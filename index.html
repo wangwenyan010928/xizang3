@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公司网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">网站首页</a></li>
+                <li><a href="about.html">公司简介</a></li>
+                <li><a href="products.html">产品展示</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+                <li id="user-info">请登录</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero-section">
+        <div class="overlay">
+            <h1>欢迎来到我们的网站</h1>
+            <p>致力于提供优质的产品和服务</p>
+            <button onclick="window.location.href='products.html'">浏览产品</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Centered Company Info -->
+        <section class="company-info centered">
+            <h2>公司简介</h2>
+            <img src="assets/images/company-photo.jpg" alt="公司图片">
+            <p>我们是一家致力于绿色健康食品的企业，提供优质的产品和服务...</p>
+        </section>
+
+        <section class="auth-section">
+            <h2>会员专区</h2>
+            <div id="auth-forms">
+                <div id="login-form">
+                    <h3>登录</h3>
+                    <input type="text" id="login-username" placeholder="用户名">
+                    <input type="password" id="login-password" placeholder="密码">
+                    <button onclick="login()">登录</button>
+                </div>
+                <div id="register-form">
+                    <h3>注册</h3>
+                    <input type="text" id="register-username" placeholder="用户名">
+                    <input type="password" id="register-password" placeholder="密码">
+                    <button onclick="register()">注册</button>
+                </div>
+            </div>
+            <div id="member-content" style="display:none;">
+                <h3>会员专属内容</h3>
+                <p>这里是只有登录会员才能看到的内容。</p>
+            </div>
+        </section>
+
+        <aside class="contact-info">
+            <h3>联系我们</h3>
+            <p>电话: 123-456-7890</p>
+            <p>邮箱: info@company.com</p>
+            <p id="address">地址: 正在加载中...</p>
+        </aside>
+
+        <aside class="product-nav">
+            <h3>产品导航</h3>
+            <ul>
+                <li><a href="product-category1.html">产品类别1</a></li>
+                <li><a href="#">产品类别2</a></li>
+                <li><a href="#">产品类别3</a></li>
+                <li><a href="#">产品类别4</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <div class="link-section">
+                <h4>代理区</h4>
+                <p>代理信息...</p>
+                <a href="#">了解更多</a>
+            </div>
+            <div class="link-section">
+                <h4>批发区</h4>
+                <p>批发信息...</p>
+                <a href="#">了解更多</a>
+            </div>
+        </div>
+        <p>© 2024 公司名称. 保留所有权利. 地址: <span id="footer-address">深圳市南山区</span>, 电话: 123-456-7890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
