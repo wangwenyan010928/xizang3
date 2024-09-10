@@ -121,8 +121,8 @@ header nav ul li a:hover {
     background-color: #f9f9f9; /* Background color for the text box */
     border: 2px solid #e0e0e0; /* Border around the text box */
     border-radius: 10px; /* Rounded corners for the text box */
-    font-size: 1.2em; /* Enlarged font size */
-    line-height: 1.6; /* Line height for better readability */
+    font-size: 1.5em; /* Enlarged font size */
+    line-height: 1.8; /* Line height for better readability */
     color: #333;
     text-align: justify; /* Justify the text */
 }
