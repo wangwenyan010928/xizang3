@@ -115,16 +115,16 @@ header nav ul li a:hover {
 }
 
 .aligned-text {
-    width: 50%; /* Set the width of the text to match the image */
+    width: 50%; /* Ensure the text width matches the image */
     margin: 0 auto; /* Center the text under the image */
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    font-size: 1.2em;
-    line-height: 1.6;
-    text-align: justify;
+    background-color: #f9f9f9; /* Background color for the text box */
+    border: 2px solid #e0e0e0; /* Border around the text box */
+    border-radius: 10px; /* Rounded corners for the text box */
+    font-size: 1.2em; /* Enlarged font size */
+    line-height: 1.6; /* Line height for better readability */
     color: #333;
+    text-align: justify; /* Justify the text */
 }
 
 footer {
