@@ -85,17 +85,21 @@ header nav ul li a:hover {
 /* Enlarge the image to twice its original size */
 .company-info img {
     width: 100%; /* Set width to 100% of its container */
-    max-width: 800px; /* Maximum width for the image to enlarge it */
+    max-width: 1200px; /* Maximum width for the image to enlarge it */
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
 }
 
-/* Align text properly */
+/* Align text properly and enlarge the font */
 .aligned-text {
     text-align: center; /* Center text horizontally */
     margin-top: 10px;
+    font-size: 1.5em; /* Enlarge the font size */
+    line-height: 1.8; /* Add better line spacing */
+    font-family: 'Georgia', serif; /* Use a serif font for a classy look */
+    color: #555; /* Softer text color for readability */
 }
 
 /* Sidebar and Content Layout */
