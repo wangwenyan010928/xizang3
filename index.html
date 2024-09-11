@@ -25,9 +25,8 @@
         </div>
     </div>
 
-    <!-- Main container where content will be dynamically replaced -->
     <div class="container" id="main-content">
-        <!-- Default content before clicking 酸雨观测 -->
+        <!-- Default content -->
         <section class="company-info centered">
             <h2>林芝市气象局简介</h2>
             <div class="content-wrapper">
@@ -37,6 +36,45 @@
                 </p>
             </div>
         </section>
+
+        <section class="auth-section">
+            <h2>会员专区</h2>
+            <div id="auth-forms">
+                <div id="login-form">
+                    <h3>登录</h3>
+                    <input type="text" id="login-username" placeholder="用户名">
+                    <input type="password" id="login-password" placeholder="密码">
+                    <button onclick="login()">登录</button>
+                </div>
+                <div id="register-form">
+                    <h3>注册</h3>
+                    <input type="text" id="register-username" placeholder="用户名">
+                    <input type="password" id="register-password" placeholder="密码">
+                    <button onclick="register()">注册</button>
+                </div>
+            </div>
+            <div id="member-content" style="display:none;">
+                <h3>会员专属内容</h3>
+                <p>这里是只有登录会员才能看到的内容。</p>
+            </div>
+        </section>
+
+        <aside class="contact-info">
+            <h3>联系我们</h3>
+            <p>电话: 123-456-7890</p>
+            <p>邮箱: info@company.com</p>
+            <p id="address">地址: 正在加载中...</p>
+        </aside>
+
+        <aside class="product-nav">
+            <h3>产品导航</h3>
+            <ul>
+                <li><a href="product-category1.html">产品类别1</a></li>
+                <li><a href="#">产品类别2</a></li>
+                <li><a href="#">产品类别3</a></li>
+                <li><a href="#">产品类别4</a></li>
+            </ul>
+        </aside>
     </div>
 
     <footer>
@@ -69,7 +107,6 @@
                         <button>质量体系内审检查</button>
                     </div>
                     <div class="main-content-area">
-                        <!-- This area can be filled with content for each button -->
                         <h2>酸雨观测业务规范</h2>
                         <p>这里是酸雨观测相关的业务规范和内容。</p>
                     </div>
