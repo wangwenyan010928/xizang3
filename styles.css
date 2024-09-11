@@ -98,63 +98,37 @@ header nav ul li a:hover {
     width: 30%;
 }
 
-/* Flexbox container to align image and text */
+/* Container to align image and text box */
 .content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin: 0 auto; /* Ensure the wrapper is centered */
+    margin: 0 auto;
 }
 
 /* Image styling */
 .company-info img {
-    width: 50%; /* Image and text are of the same width */
+    width: 50%; /* Image and text box are the same width */
     height: auto;
     border-radius: 5px;
-    margin-bottom: 20px; /* Adds spacing below the image */
-    display: block; /* Ensure the image is treated as a block element */
-    margin: 0 auto; /* Ensure image is centered */
+    margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Text box styling */
-.aligned-text {
-    width: 50%; /* Keep text width aligned with image */
-    margin: 0 auto; /* Center text */
+.aligned-text-box {
+    width: 50%; /* Align the text box width with the image */
+    margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9; /* Background color for the text box */
-    border: 2px solid #e0e0e0; /* Border around the text box */
-    border-radius: 10px; /* Rounded corners for the text box */
-    font-size: 1.5em; /* Enlarged font size */
-    line-height: 1.8; /* Line height for better readability */
+    background-color: #f9f9f9; /* Background for the text box */
+    border: 2px solid #e0e0e0; /* Border for the text box */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 1.5em;
+    line-height: 1.8; /* Improve readability */
     color: #333;
-    text-align: justify; /* Justify the text */
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-}
-
-.footer-links .link-section h4 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.footer-links .link-section p, .footer-links .link-section a {
-    color: #ccc;
-}
-
-.footer-links .link-section a:hover {
-    color: #fff;
-    text-decoration: underline;
+    text-align: justify;
+    box-sizing: border-box; /* Ensure padding and borders are included in width */
 }
