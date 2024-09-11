@@ -98,25 +98,28 @@ header nav ul li a:hover {
     width: 30%;
 }
 
-/* Centering Company Info Section */
-.company-info {
-    width: 100%;
+/* Flexbox container to align image and text */
+.content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
+/* Image styling */
 .company-info img {
-    width: 50%; /* Set the width of the image */
+    width: 50%; /* Image and text are of the same width */
     height: auto;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Adds spacing below the image */
 }
 
+/* Text box styling */
 .aligned-text {
-    width: 50%; /* Ensure the text width matches the image */
-    margin: 0 auto; /* Center the text under the image */
+    width: 50%; /* Keep text width aligned with image */
+    margin: 0 auto; /* Center text */
     padding: 20px;
     background-color: #f9f9f9; /* Background color for the text box */
     border: 2px solid #e0e0e0; /* Border around the text box */
