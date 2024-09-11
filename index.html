@@ -37,6 +37,7 @@
             </div>
         </section>
 
+        <!-- Row for login/register, contact info, and product navigation -->
         <div class="bottom-row">
             <section class="auth-section">
                 <h2>会员专区</h2>
@@ -100,19 +101,27 @@
         function loadAcidRainObservation() {
             // Replace the main content with the sidebar and blank content section
             document.getElementById('main-content').innerHTML = `
-                <div class="content-layout">
+                <div class="content-layout enlarged-content">
                     <div class="sidebar">
-                        <button>业务规范</button>
+                        <button onclick="loadBusinessSpec()">业务规范</button>
                         <button>规章制度</button>
                         <button>业务工作</button>
                         <button>计量检测</button>
                         <button>质量体系内审检查</button>
                     </div>
-                    <div class="main-content-area">
+                    <div class="main-content-area" id="right-content">
                         <h2>酸雨观测业务规范</h2>
                         <p>这里是酸雨观测相关的业务规范和内容。</p>
                     </div>
                 </div>
+            `;
+        }
+
+        // When '业务规范' is clicked, add new buttons on the right
+        function loadBusinessSpec() {
+            document.getElementById('right-content').innerHTML = `
+                <button class="new-button">酸雨自动观测业务规范</button>
+                <button class="new-button">酸雨观测规范</button>
             `;
         }
     </script>
