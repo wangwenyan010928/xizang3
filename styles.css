@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Header Styling */
 header {
     background-color: #333;
     padding: 10px 0;
@@ -32,8 +34,10 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: underline;
+    color: #00bcd4;
 }
 
+/* Hero Section */
 .hero-section {
     background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
     height: 300px;
@@ -58,6 +62,8 @@ header nav ul li a:hover {
 .hero-section h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .hero-section p {
@@ -73,12 +79,14 @@ header nav ul li a:hover {
     cursor: pointer;
     font-size: 1em;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .hero-section button:hover {
     background-color: #0056b3;
 }
 
+/* Main Container */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -86,49 +94,122 @@ header nav ul li a:hover {
     padding: 20px;
 }
 
+/* Company Info and Acid Rain Observation */
 .company-info, .auth-section, .contact-info, .product-nav {
     background-color: #fff;
     padding: 15px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    transition: box-shadow 0.3s ease;
 }
 
+.company-info:hover, .auth-section:hover, .contact-info:hover, .product-nav:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Acid Rain Specific Styles */
+.acid-rain-img {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.acid-rain-text {
+    font-size: 1.3em;
+    line-height: 1.7;
+    color: #555;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+}
+
+/* Auth Section */
 .auth-section, .contact-info, .product-nav {
     width: 30%;
 }
 
-/* Container to align image and text box */
-.content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Form Styling */
+.auth-section input {
     width: 100%;
-    margin: 0 auto;
-}
-
-/* Image styling */
-.company-info img {
-    width: 50%; /* Image and text box are the same width */
-    height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    margin-bottom: 20px;
-    display: block;
-    margin: 0 auto;
 }
 
-/* Text box styling */
-.aligned-text-box {
-    width: 50%; /* Align the text box width with the image */
-    margin: 0 auto;
+.auth-section button {
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Contact Info */
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Product Navigation */
+.product-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-nav ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.product-nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
     padding: 20px;
-    background-color: #f9f9f9; /* Background for the text box */
-    border: 2px solid #e0e0e0; /* Border for the text box */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 1.5em;
-    line-height: 1.8; /* Improve readability */
-    color: #333;
-    text-align: justify;
-    box-sizing: border-box; /* Ensure padding and borders are included in width */
+    text-align: center;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+footer .link-section h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
