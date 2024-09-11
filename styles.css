@@ -103,9 +103,9 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; /* Ensure the wrapper is centered */
 }
 
 /* Image styling */
@@ -114,6 +114,8 @@ header nav ul li a:hover {
     height: auto;
     border-radius: 5px;
     margin-bottom: 20px; /* Adds spacing below the image */
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Ensure image is centered */
 }
 
 /* Text box styling */
