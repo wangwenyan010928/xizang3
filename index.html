@@ -37,44 +37,46 @@
             </div>
         </section>
 
-        <section class="auth-section">
-            <h2>会员专区</h2>
-            <div id="auth-forms">
-                <div id="login-form">
-                    <h3>登录</h3>
-                    <input type="text" id="login-username" placeholder="用户名">
-                    <input type="password" id="login-password" placeholder="密码">
-                    <button onclick="login()">登录</button>
+        <div class="bottom-row">
+            <section class="auth-section">
+                <h2>会员专区</h2>
+                <div id="auth-forms">
+                    <div id="login-form">
+                        <h3>登录</h3>
+                        <input type="text" id="login-username" placeholder="用户名">
+                        <input type="password" id="login-password" placeholder="密码">
+                        <button onclick="login()">登录</button>
+                    </div>
+                    <div id="register-form">
+                        <h3>注册</h3>
+                        <input type="text" id="register-username" placeholder="用户名">
+                        <input type="password" id="register-password" placeholder="密码">
+                        <button onclick="register()">注册</button>
+                    </div>
                 </div>
-                <div id="register-form">
-                    <h3>注册</h3>
-                    <input type="text" id="register-username" placeholder="用户名">
-                    <input type="password" id="register-password" placeholder="密码">
-                    <button onclick="register()">注册</button>
+                <div id="member-content" style="display:none;">
+                    <h3>会员专属内容</h3>
+                    <p>这里是只有登录会员才能看到的内容。</p>
                 </div>
-            </div>
-            <div id="member-content" style="display:none;">
-                <h3>会员专属内容</h3>
-                <p>这里是只有登录会员才能看到的内容。</p>
-            </div>
-        </section>
+            </section>
 
-        <aside class="contact-info">
-            <h3>联系我们</h3>
-            <p>电话: 123-456-7890</p>
-            <p>邮箱: info@company.com</p>
-            <p id="address">地址: 正在加载中...</p>
-        </aside>
+            <aside class="contact-info">
+                <h3>联系我们</h3>
+                <p>电话: 123-456-7890</p>
+                <p>邮箱: info@company.com</p>
+                <p id="address">地址: 正在加载中...</p>
+            </aside>
 
-        <aside class="product-nav">
-            <h3>产品导航</h3>
-            <ul>
-                <li><a href="product-category1.html">产品类别1</a></li>
-                <li><a href="#">产品类别2</a></li>
-                <li><a href="#">产品类别3</a></li>
-                <li><a href="#">产品类别4</a></li>
-            </ul>
-        </aside>
+            <aside class="product-nav">
+                <h3>产品导航</h3>
+                <ul>
+                    <li><a href="product-category1.html">产品类别1</a></li>
+                    <li><a href="#">产品类别2</a></li>
+                    <li><a href="#">产品类别3</a></li>
+                    <li><a href="#">产品类别4</a></li>
+                </ul>
+            </aside>
+        </div>
     </div>
 
     <footer>
