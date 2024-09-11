@@ -34,7 +34,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     text-decoration: underline;
-    color: #00bcd4;
 }
 
 /* Hero Section */
@@ -62,124 +61,51 @@ header nav ul li a:hover {
 .hero-section h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.hero-section p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.hero-section button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.hero-section button:hover {
-    background-color: #0056b3;
 }
 
 /* Main Container */
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 20px;
 }
 
-/* Company Info and Acid Rain Observation */
-.company-info, .auth-section, .contact-info, .product-nav {
-    background-color: #fff;
+/* Sidebar and Content Layout */
+.content-layout {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
     padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    transition: box-shadow 0.3s ease;
-}
-
-.company-info:hover, .auth-section:hover, .contact-info:hover, .product-nav:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Acid Rain Specific Styles */
-.acid-rain-img {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.acid-rain-text {
-    font-size: 1.3em;
-    line-height: 1.7;
-    color: #555;
-    padding: 15px;
-    background-color: #f0f0f0;
-    border-left: 5px solid #007bff;
-    border-radius: 5px;
-}
-
-/* Auth Section */
-.auth-section, .contact-info, .product-nav {
-    width: 30%;
-}
-
-/* Form Styling */
-.auth-section input {
+.sidebar button {
+    display: block;
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.auth-section button {
-    padding: 10px;
-    width: 100%;
     background-color: #007bff;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 5px;
+    margin-bottom: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 1em;
 }
 
-.auth-section button:hover {
+.sidebar button:hover {
     background-color: #0056b3;
 }
 
-/* Contact Info */
-.contact-info p {
-    margin: 5px 0;
-}
-
-/* Product Navigation */
-.product-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.product-nav ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.product-nav ul li a {
-    text-decoration: none;
-    color: #007bff;
-    transition: color 0.3s ease;
-}
-
-.product-nav ul li a:hover {
-    color: #0056b3;
+.main-content-area {
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -198,7 +124,6 @@ footer .footer-links {
 
 footer .link-section h4 {
     margin-bottom: 10px;
-    font-size: 1.2em;
 }
 
 footer p {
