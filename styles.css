@@ -5,7 +5,6 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    height: 100vh; /* 确保整个页面占满视口高度 */
 }
 
 /* Header Styling */
@@ -37,11 +36,11 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Sidebar and Content Layout */
+/* Main Layout */
 .content-layout {
     display: flex;
-    align-items: stretch; /* 确保两侧高度一致 */
-    height: 100vh; /* 使用 100vh 让高度覆盖整个视口 */
+    align-items: stretch; /* 确保顶部对齐并让两者均伸展 */
+    height: 100vh; /* 高度设为视口的高度 */
 }
 
 .sidebar {
@@ -52,19 +51,21 @@ header nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    gap: 5px; /* 调整按钮之间的间距 */
-    height: 100%; /* 高度与右侧区域相同 */
+    justify-content: flex-start; /* 从顶部对齐 */
+    gap: 5px; /* 设置按钮之间的间距为 5px */
+    height: 100%; /* 确保侧边栏的高度与右侧内容相同 */
 }
 
 .sidebar button {
     width: 100%;
-    padding: 8px;
+    padding: 8px; /* 减少按钮的上下填充 */
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+    margin: 0; /* 去掉按钮的外边距 */
 }
 
 .sidebar button:hover {
@@ -78,7 +79,7 @@ header nav ul li a:hover {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 100%; /* 确保内容区域占满整个高度 */
+    height: 100%; /* 确保右侧内容高度与侧边栏一致 */
 }
 
 .new-button {
@@ -96,15 +97,4 @@ header nav ul li a:hover {
 
 .new-button:hover {
     background-color: #0056b3;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    bottom: 0;
 }
