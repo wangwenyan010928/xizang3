@@ -19,12 +19,6 @@
         </nav>
     </header>
 
-    <div class="hero-section">
-        <div class="overlay">
-            <h1>欢迎来到我们的网站</h1>
-        </div>
-    </div>
-
     <div class="container" id="main-content">
         <!-- Default content -->
         <section class="company-info centered">
@@ -37,7 +31,7 @@
             </div>
         </section>
 
-        <!-- Restored the horizontal layout for the bottom row -->
+        <!-- Horizontal layout for login, contact, and product sections -->
         <div class="bottom-row">
             <section class="auth-section">
                 <h2>会员专区</h2>
@@ -76,8 +70,6 @@
         </div>
     </div>
 
-    <!-- Removed the "代理区" and "批发区" -->
-    
     <footer>
         <p>© 2024 公司名称. 保留所有权利. 地址: <span id="footer-address">深圳市南山区</span>, 电话: 123-456-7890</p>
     </footer>
@@ -89,26 +81,20 @@
             document.getElementById('main-content').innerHTML = `
                 <div class="content-layout enlarged-content">
                     <div class="sidebar">
-                        <button onclick="loadBusinessSpec()">业务规范</button>
-                        <button>规章制度</button>
-                        <button>业务工作</button>
-                        <button>计量检测</button>
-                        <button>质量体系内审检查</button>
+                        <button onclick="showPDF('酸雨自动观测业务规范.pdf')">酸雨自动观测业务规范</button>
+                        <button onclick="showPDF('酸雨观测规范.pdf')">酸雨观测规范</button>
                     </div>
                     <div class="main-content-area">
-                        <div id="right-content">
-                            <button class="new-button" onclick="showPDF('酸雨自动观测业务规范.pdf')">酸雨自动观测业务规范</button>
-                            <button class="new-button" onclick="showPDF('酸雨观测规范.pdf')">酸雨观测规范</button>
-                        </div>
                         <iframe id="pdf-viewer" style="width:100%; height:1800px;" frameborder="0"></iframe>
                     </div>
                 </div>
             `;
         }
 
-        // Function to load the PDF in the iframe
+        // Function to load the PDF file into the iframe
         function showPDF(pdfFile) {
-            document.getElementById('pdf-viewer').src = 'docs/' + pdfFile;
+            // Load the PDF directly from the root directory
+            document.getElementById('pdf-viewer').src = pdfFile;
         }
     </script>
 </body>
