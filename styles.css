@@ -117,20 +117,20 @@ header nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 确保按钮均匀分布 */
+    justify-content: flex-start; /* 调整为顶部对齐 */
+    gap: 10px; /* 设置按钮之间的间距为 10px */
     height: 100%; /* 确保侧边栏的高度与右侧内容相同 */
 }
 
 .sidebar button {
     width: 100%;
-    padding: 5px 0; /* 调整按钮的上下填充，让按钮更加紧凑 */
+    padding: 10px; /* 调整按钮的上下填充 */
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    margin-bottom: 10px; /* 调整按钮之间的间距 */
 }
 
 .sidebar button:hover {
