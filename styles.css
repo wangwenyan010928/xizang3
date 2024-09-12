@@ -106,11 +106,11 @@ header nav ul li a:hover {
 .content-layout {
     display: flex;
     align-items: flex-start; /* 确保顶部对齐 */
-    height: 100vh; /* 视口高度，确保左侧和右侧都拉伸到底部 */
+    height: 100vh; /* 高度设为视口的高度，使左侧栏与右侧内容一致 */
 }
 
 .enlarged-content {
-    height: 100%; /* 确保内容布局高度覆盖整个页面 */
+    height: 100%;
 }
 
 .sidebar {
@@ -121,9 +121,8 @@ header nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 均匀分布按钮，确保底部对齐 */
-    gap: 10px;
-    height: 100%; /* 高度设置为100%，确保与右侧内容对齐 */
+    justify-content: space-between; /* 确保按钮均匀分布 */
+    height: 100%; /* 确保侧边栏的高度与右侧内容相同 */
 }
 
 .sidebar button {
@@ -148,7 +147,7 @@ header nav ul li a:hover {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 100%; /* 使内容区域的高度与侧边栏一致 */
+    height: 100%; /* 确保右侧内容高度与侧边栏一致 */
 }
 
 .new-button {
@@ -168,7 +167,7 @@ header nav ul li a:hover {
     background-color: #0056b3;
 }
 
-/* Bottom Row Styling (Restored to horizontal layout) */
+/* Bottom Row Styling */
 .bottom-row {
     display: flex;
     justify-content: space-between;
