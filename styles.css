@@ -105,12 +105,12 @@ header nav ul li a:hover {
 /* Sidebar and Content Layout */
 .content-layout {
     display: flex;
-    align-items: stretch; /* 保证子元素高度一致 */
-    height: 900px; /* 设置与 PDF 框相同的高度 */
+    align-items: flex-start; /* 确保顶部对齐 */
+    height: 100vh; /* 视口高度，确保左侧和右侧都拉伸到底部 */
 }
 
 .enlarged-content {
-    height: 900px;
+    height: 100%; /* 确保内容布局高度覆盖整个页面 */
 }
 
 .sidebar {
@@ -121,9 +121,9 @@ header nav ul li a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* 内容均匀分布 */
+    justify-content: space-between; /* 均匀分布按钮，确保底部对齐 */
     gap: 10px;
-    height: 100%; /* 确保高度覆盖父元素 */
+    height: 100%; /* 高度设置为100%，确保与右侧内容对齐 */
 }
 
 .sidebar button {
@@ -148,7 +148,7 @@ header nav ul li a:hover {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 100%; /* 确保内容区域高度与 sidebar 相同 */
+    height: 100%; /* 使内容区域的高度与侧边栏一致 */
 }
 
 .new-button {
