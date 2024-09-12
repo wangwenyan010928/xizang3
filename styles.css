@@ -116,4 +116,103 @@ header nav ul li a:hover {
 .sidebar {
     width: 200px;
     background-color: #333;
-    padding:
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Ensure buttons are aligned vertically */
+    gap: 10px; /* Add some space between buttons */
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+}
+
+.main-content-area {
+    flex-grow: 1;
+    margin-left: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.new-button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.new-button:hover {
+    background-color: #0056b3;
+}
+
+/* Bottom Row Styling (Restored horizontal layout) */
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.auth-section, .contact-info, .product-nav {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.auth-section {
+    margin-left: 0;
+}
+
+.contact-info {
+    margin-left: 0;
+}
+
+.product-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-nav ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.product-nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
