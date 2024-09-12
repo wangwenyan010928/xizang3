@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    height: 100vh; /* 确保整个页面占满视口高度 */
 }
 
 /* Header Styling */
@@ -36,70 +37,34 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section */
-.hero-section {
-    background: url('assets/images/hero-bg.jpg') no-repeat center center/cover;
-    height: 300px;
-    position: relative;
-}
-
-.hero-section .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero-section h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Main Container */
-.container {
-    padding: 20px;
-}
-
 /* Sidebar and Content Layout */
 .content-layout {
     display: flex;
-    align-items: stretch; /* 确保顶部对齐并让两者均伸展 */
-    height: 100vh; /* 高度设为视口的高度，使左侧栏与右侧内容一致 */
+    align-items: stretch; /* 确保两侧高度一致 */
+    height: 100vh; /* 使用 100vh 让高度覆盖整个视口 */
 }
 
 .sidebar {
     width: 200px;
     background-color: #333;
-    padding: 10px; /* 调整左右边距 */
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* 从顶部对齐 */
-    gap: 5px; /* 调整按钮之间的间距为 5px */
-    height: 100%; /* 确保侧边栏的高度与右侧内容相同 */
+    gap: 5px; /* 调整按钮之间的间距 */
+    height: 100%; /* 高度与右侧区域相同 */
 }
 
 .sidebar button {
     width: 100%;
-    padding: 8px; /* 减少按钮的上下填充，使其更加紧凑 */
+    padding: 8px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
-    margin: 0; /* 去掉按钮的外边距 */
 }
 
 .sidebar button:hover {
@@ -113,7 +78,7 @@ header nav ul li a:hover {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 100%; /* 确保右侧内容高度与侧边栏一致 */
+    height: 100%; /* 确保内容区域占满整个高度 */
 }
 
 .new-button {
@@ -139,4 +104,7 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
 }
