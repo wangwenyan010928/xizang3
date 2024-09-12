@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>林芝市气象局网站</title>
+    <title>酸雨观测业务</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,104 +19,63 @@
         </nav>
     </header>
 
-    <div class="hero-section">
-        <div class="overlay">
-            <h1>欢迎来到我们的网站</h1>
+    <div class="content-layout enlarged-content">
+        <div class="sidebar">
+            <button onclick="loadBusinessSpec()">业务规范</button>
+            <button>规章制度</button>
+            <button>业务工作</button>
+            <button>计量检测</button>
+            <button>质量体系内审检查</button>
+        </div>
+        <div class="main-content-area">
+            <div id="right-content">
+                <button class="new-button" onclick="showPDF('酸雨自动观测业务规范.pdf')">酸雨自动观测业务规范</button>
+                <button class="new-button" onclick="showPDF('酸雨观测规范.pdf')">酸雨观测规范</button>
+            </div>
+            <!-- 网页首页 图片和文本居中 -->
+            <section class="company-info centered">
+                <h2>林芝市气象局简介</h2>
+                <div class="content-wrapper">
+                    <img src="assets/images/company-photo.jpg" alt="公司图片">
+                    <p class="aligned-text">
+                        林芝气象事业创建于1953年2月。已建成布局和功能较为完备的气象灾害大气综合监测站网，拥有4个国家有人地面气象观测站...
+                    </p>
+                </div>
+            </section>
+            <!-- PDF 显示框 -->
+            <iframe id="pdf-viewer" style="width:100%; height:100vh;" frameborder="0"></iframe>
         </div>
     </div>
 
-    <div class="container" id="main-content">
-        <!-- Default content -->
-        <section class="company-info centered">
-            <h2>林芝市气象局简介</h2>
-            <div class="content-wrapper">
-                <img src="assets/images/company-photo.jpg" alt="公司图片">
-                <p class="aligned-text">
-                    林芝气象事业创建于1953年2月。已建成布局和功能较为完备的气象灾害大气综合监测站网，拥有4个国家有人地面气象观测站...
-                </p>
+    <!-- 底部布局，会员专区，联系我们，产品导航横向排列 -->
+    <footer>
+        <div class="footer-links">
+            <div class="link-section auth-section">
+                <h3>会员专区</h3>
+                <p>用户登录后访问专属内容。</p>
+                <a href="#">了解更多</a>
             </div>
-        </section>
-
-        <!-- Restored the horizontal layout for the bottom row -->
-        <div class="bottom-row">
-            <section class="auth-section">
-                <h2>会员专区</h2>
-                <div id="auth-forms">
-                    <div id="login-form">
-                        <h3>登录</h3>
-                        <input type="text" id="login-username" placeholder="用户名">
-                        <input type="password" id="login-password" placeholder="密码">
-                        <button onclick="login()">登录</button>
-                    </div>
-                    <div id="register-form">
-                        <h3>注册</h3>
-                        <input type="text" id="register-username" placeholder="用户名">
-                        <input type="password" id="register-password" placeholder="密码">
-                        <button onclick="register()">注册</button>
-                    </div>
-                </div>
-            </section>
-
-            <aside class="contact-info">
+            <div class="link-section contact-info">
                 <h3>联系我们</h3>
                 <p>电话: 123-456-7890</p>
                 <p>邮箱: info@company.com</p>
-                <p id="address">地址: 正在加载中...</p>
-            </aside>
-
-            <aside class="product-nav">
+                <p>地址: 深圳市南山区</p>
+            </div>
+            <div class="link-section product-nav">
                 <h3>产品导航</h3>
                 <ul>
-                    <li><a href="product-category1.html">产品类别1</a></li>
+                    <li><a href="#">产品类别1</a></li>
                     <li><a href="#">产品类别2</a></li>
                     <li><a href="#">产品类别3</a></li>
                     <li><a href="#">产品类别4</a></li>
                 </ul>
-            </aside>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-links">
-            <div class="link-section">
-                <h4>代理区</h4>
-                <p>代理信息...</p>
-                <a href="#">了解更多</a>
-            </div>
-            <div class="link-section">
-                <h4>批发区</h4>
-                <p>批发信息...</p>
-                <a href="#">了解更多</a>
             </div>
         </div>
-        <p>© 2024 公司名称. 保留所有权利. 地址: <span id="footer-address">深圳市南山区</span>, 电话: 123-456-7890</p>
+        <p>© 2024 公司名称. 保留所有权利.</p>
     </footer>
 
-    <!-- JavaScript for loading Acid Rain Observation Sidebar and Content -->
+    <!-- JavaScript for loading PDFs -->
     <script>
-        function loadAcidRainObservation() {
-            // Replace the main content with the sidebar and iframe for PDFs
-            document.getElementById('main-content').innerHTML = `
-                <div class="content-layout enlarged-content">
-                    <div class="sidebar">
-                        <button onclick="loadBusinessSpec()">业务规范</button>
-                        <button>规章制度</button>
-                        <button>业务工作</button>
-                        <button>计量检测</button>
-                        <button>质量体系内审检查</button>
-                    </div>
-                    <div class="main-content-area">
-                        <div id="right-content">
-                            <button class="new-button" onclick="showPDF('酸雨自动观测业务规范.pdf')">酸雨自动观测业务规范</button>
-                            <button class="new-button" onclick="showPDF('酸雨观测规范.pdf')">酸雨观测规范</button>
-                        </div>
-                        <iframe id="pdf-viewer" style="width:100%; height:900px;" frameborder="0"></iframe>
-                    </div>
-                </div>
-            `;
-        }
-
-        // Function to load the PDF in the iframe
         function showPDF(pdfFile) {
             document.getElementById('pdf-viewer').src = 'docs/' + pdfFile;
         }
