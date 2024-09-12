@@ -105,18 +105,14 @@ header nav ul li a:hover {
 /* Sidebar and Content Layout */
 .content-layout {
     display: flex;
-    align-items: flex-start; /* 确保顶部对齐 */
+    align-items: stretch; /* 确保顶部对齐并让两者均伸展 */
     height: 100vh; /* 高度设为视口的高度，使左侧栏与右侧内容一致 */
-}
-
-.enlarged-content {
-    height: 100%;
 }
 
 .sidebar {
     width: 200px;
     background-color: #333;
-    padding: 15px;
+    padding: 10px; /* 调整左右边距 */
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -127,13 +123,14 @@ header nav ul li a:hover {
 
 .sidebar button {
     width: 100%;
-    padding: 10px;
+    padding: 5px 0; /* 调整按钮的上下填充，让按钮更加紧凑 */
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+    margin-bottom: 10px; /* 调整按钮之间的间距 */
 }
 
 .sidebar button:hover {
