@@ -13,7 +13,8 @@
                 <li><a href="index.html">网站首页</a></li>
                 <li><a href="#" onclick="loadAcidRainObservation()">酸雨观测</a></li>
                 <li><a href="#" onclick="loadUpperAirObservation()">高空观测</a></li>
-                <li><a href="contact.html">联系我站</a></li>
+                <li><a href="#" onclick="loadWeatherRadar()">天气雷达</a></li> <!-- New button -->
+                <li><a href="contact.html">联系我们</a></li>
                 <li id="user-info">请登录</li>
             </ul>
         </nav>
@@ -92,7 +93,7 @@
         <p>© 2024 公司名称. 保留所有权利. 地址: <span id="footer-address">深圳市南山区</span>, 电话: 123-456-7890</p>
     </footer>
 
-    <!-- JavaScript for changing the banner and loading Upper Air Observation content -->
+    <!-- JavaScript for changing the banner and loading new content -->
     <script>
         function loadAcidRainObservation() {
             // Replace the main content with the sidebar and iframe for PDFs
@@ -114,11 +115,6 @@
                     </div>
                 </div>
             `;
-        }
-
-        // Function to load the PDF in the iframe
-        function showPDF(pdfFile) {
-            document.getElementById('pdf-viewer').src = 'docs/' + pdfFile;
         }
 
         function loadUpperAirObservation() {
@@ -145,29 +141,30 @@
             `;
         }
 
-        // Placeholder functions for each button in the sidebar
-        function loadWorkPlan() {
-            document.getElementById('right-content').innerHTML = '<p>工作计划内容...</p>';
+        function loadWeatherRadar() {
+            // Replace the main content with the sidebar and content area for Weather Radar
+            document.getElementById('main-content').innerHTML = `
+                <div class="content-layout enlarged-content">
+                    <div class="sidebar">
+                        <button onclick="loadRadarData()">雷达资料</button>
+                        <button onclick="loadRegulations()">规范制度</button>
+                    </div>
+                    <div class="main-content-area">
+                        <div id="right-content">
+                            <!-- Content for each button will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            `;
         }
 
-        function loadLRadar() {
-            document.getElementById('right-content').innerHTML = '<p>L波段雷达内容...</p>';
+        // Placeholder functions for each button in the Weather Radar section
+        function loadRadarData() {
+            document.getElementById('right-content').innerHTML = '<p>雷达资料内容...</p>';
         }
 
-        function loadAutoBox() {
-            document.getElementById('right-content').innerHTML = '<p>自动方仓内容...</p>';
-        }
-
-        function loadBeidou() {
-            document.getElementById('right-content').innerHTML = '<p>北斗探空内容...</p>';
-        }
-
-        function loadElectrolysis() {
-            document.getElementById('right-content').innerHTML = '<p>电解水制氢内容...</p>';
-        }
-
-        function loadRelatedFiles() {
-            document.getElementById('right-content').innerHTML = '<p>相关文件内容...</p>';
+        function loadRegulations() {
+            document.getElementById('right-content').innerHTML = '<p>规范制度内容...</p>';
         }
     </script>
 </body>

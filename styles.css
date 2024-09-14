@@ -150,6 +150,7 @@ header nav ul li a:hover {
     overflow-y: auto; /* Add scroll if content overflows */
 }
 
+/* New Button Styling */
 .new-button {
     display: block;
     margin: 10px 0;
