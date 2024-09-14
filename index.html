@@ -19,7 +19,7 @@
         </nav>
     </header>
 
-    <div class="hero-section">
+    <div class="hero-section" id="hero-section">
         <div class="overlay">
             <h1>欢迎来到我们的网站</h1>
         </div>
@@ -92,7 +92,7 @@
         <p>© 2024 公司名称. 保留所有权利. 地址: <span id="footer-address">深圳市南山区</span>, 电话: 123-456-7890</p>
     </footer>
 
-    <!-- JavaScript for loading Acid Rain Observation and Upper Air Observation -->
+    <!-- JavaScript for changing the banner and loading Upper Air Observation content -->
     <script>
         function loadAcidRainObservation() {
             // Replace the main content with the sidebar and iframe for PDFs
@@ -122,6 +122,9 @@
         }
 
         function loadUpperAirObservation() {
+            // Change the hero section background to the new banner
+            document.querySelector('.hero-section').style.backgroundImage = "url('assets/images/high-altitude-banner.png')";
+
             // Replace the main content with the sidebar and content area for Upper Air Observation
             document.getElementById('main-content').innerHTML = `
                 <div class="content-layout enlarged-content">
